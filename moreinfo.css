@@ -1,0 +1,89 @@
+/* CSS til katalogtekst */
+
+#moreinfo{
+	height: auto;
+	width: 625px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	padding-top: 15px;
+	padding-left: 20px;
+	font-size: 0.875em;
+	background-image: url(seamless_c.jpg);
+	}
+
+
+/*.catalogue{
+	position: relative;
+	clear: both;
+}
+*/
+
+h4 {
+	color: #333333;
+	margin-bottom: 0px;
+	margin-top: 7px;
+	font-size: 1.3em;
+	font-weight: lighter;
+	margin-left: 0px;
+	text-align: center;
+}
+
+/* tekst i tabell*/
+
+/* td.ledetekst {
+	font-size: 100%;
+	font-weight: bold;
+	color: #c5d4bd;
+} */
+
+span.TILVNR, span.UNR, span.MUSEUMSNR  {
+	font-weight: bold;
+	color: #7C98D1;
+}
+span.GJSTAND{
+	font-weight: bold;
+	color: #069;
+	}
+
+span.Artefact {
+	color: #069;
+	font-size: 110%;
+	font-weight: bold
+}
+
+span.MUSEUMSNR {
+	font-weight: bold;
+	color: #069;
+}
+
+span.museumsnr, span.unr {
+	font-weight: bold;
+	color: #069;
+}
+
+
+/* ingen spes styling 
+
+span.KOMMUNE, span.SOGN, span.FYLKE,span.PGJ {
+	font-style: italic;
+	color: #004363; 
+}
+
+span.kommune, span.sogn, span.fylke { 
+font-style: normal ;
+font-weight: bold;
+color: #adf02d; }
+
+span.gjstand, span.funnkat, span.funnkontekst, span.periode {font-weight: bold }
+
+
+span.bolditalic  {font-style: italic; font-weight: bold}
+
+*/
+
+.floatLeft{float: left;margin-top:5px;
+margin-right:10px;
+margin-bottom:5px;}
+
+/* end endring av CSS for teksten*/

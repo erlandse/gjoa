@@ -1,0 +1,107 @@
+<!doctype html>
+<html class="">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=1020, user-scalable=yes" />
+  
+  <title>Gjoa expedition</title>
+  <!--script type="text/javascript" charset="utf-8" src="javascript2.js"></script-->
+ 
+  <link href="all.css" type="text/css" rel="stylesheet"/>
+  <link href="https://app.uio.no/hf/ft/wheel/wordwheel.css" type="text/css" rel="stylesheet"/>
+  <link href="detaljvisning.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript" charset="utf-8" src="https://app.uio.no/hf/ft/jquery/jquery.js"></script>
+  <script type="text/javascript" src="http://malsup.github.com/jquery.corner.js"></script>
+  <script type="text/javascript" charset="utf-8" src="index.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="elasticClass.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="https://app.uio.no/hf/ft/solr/SolrJsonClass.js"></script>
+  <script type="text/javascript" charset="utf-8" src="https://app.uio.no/hf/ft/wheel/wheel.js"></script>
+  <script type="text/javascript" charset="utf-8" src="tools.js"></script>
+  <script type="text/javascript" charset="utf-8" src="language.js"></script>
+
+</head>
+
+<body onLoad="initializeEtnoKig()" onResize= "resize()">
+<div class="gridContainer" id='idGridContainer'>
+
+<!--h1>Kulturhistorisk museums etnografiske samling</h1-->
+<!--div id="logo"><a href="http://www.khm.uio.no"> <img src="logo_2.png" alt="Logo - Kulturhistorisk museum"/> <a/><h2 style='text-align:right;color:DarkBlue;font-weight:bold;'>The Gjøa expedition&nbsp;&nbsp;</h2></div-->
+<div ><a href="http://www.khm.uio.no"> <img border="0" src="topp-910x100.jpg" alt="Logo - Kulturhistorisk museum"/><a/></div>
+<!--div class='gridrest'-->
+<p>&nbsp;&nbsp;<span id='headlineLabel'>Explore the objects Roald Amundsen collected during his two year stay in Gjoa Haven, King William Island, 1903-1906 online</span>&nbsp;&nbsp;
+<select id='languageSelect' onchange='changeLanguage()'>
+<option value='eng' selected>English</option>
+<option value='nor'>Norsk</option>
+<option value='iku'>Inuktitut</option>
+<option value='fra'>Français</option>
+
+</select>
+</p>
+<div id="wordwheel_div"> <ul id= 'ul' class='wordwheel'>
+  </ul> </div>
+
+<div class="fritekstsok">
+ <br>
+<table id="fritekstsok">
+  <tr>
+    <td class='textsearchtd'>&nbsp;&nbsp;<span id='searchLabel'>Search:</span></td>
+    <td class='textsearchtd'><input  id="freetext" type="text" autocomplete=off onkeyup='changeWordwheel(event)' /></td>
+    <td class='textsearchtd'><input type='button' id='searchButton' class='sok' value='Search' onclick='setUpPage()' /></td><td class='textsearchtd'><input type='button' id='resetButton' class='sok' value='Reset' onclick='resetSearch()' /></td>
+  </tr>
+</table>
+
+</div>
+ 
+  <div id="info">
+  
+  <table id="tablebody"> <tr> <td class="label_result_stor"><div id="getGjenstandsType"></div></td></tr>
+  <tr> <td>&nbsp;</td></tr>
+  <tr><td class="label" id="typeTD"><span id='objectTypeLabel'>OBJECT TYPE</span></td></tr>
+  <tr> <td class="label_result"><div id="getGjenstandsTerm"></div></td></tr>
+    <tr> <td>&nbsp;</td></tr>
+  </table>
+ </div><!--end #info-->
+  
+<div id="ill">
+  
+  <div id='getPhoto'></div>
+  <br/ > 
+  
+     <div id='getFotograf'></div>  
+
+<div id="bla"></div>
+</div><!--end #ill-->
+ 
+  
+<div id="se_andre"> 
+   <h4><span id='moreObjectsLabel'>More objects</span></h4>
+<table id="result">
+</table>
+</div><!--end #se_andre-->
+
+ <!--div id="footer">
+   <a href="http://www.unimus.no/">UNIMUS</a> <br/>info(AT)unimus.no</div-->   
+<!--/div> <grid rest -->
+<!--end #gridContaliner-->
+</div>
+<div id="footer"> <img src="uio_segl.png" alt=""> 
+<table class="table_footer" style="float:right;">
+          <tr>
+            <th style="text-align:left;"><span id='responsibleLabel'>Responsible for this service</span></th>
+          </tr>
+          <tr>
+            <td style="text-align:left;"><a target='_blank' href="http://www.usit.uio.no/english/about/organisation/bps/rc/"><span id='departmentLabel'>Department for Research Computing</span></a></td>
+          </tr>
+          <tr>
+            <td style="text-align:left;"><span id='groupLabel'Data Capture and Collections Management Group</span></td>
+          </tr>
+ </table>
+      </div>    <!--end#footer--> 
+   <br><br>
+</div>
+
+</body>
+</html>
