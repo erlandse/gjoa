@@ -1,6 +1,6 @@
 <?php
 header("Content-type: text/plain;charset=UTF-8");
-
+//THIS IS A CHANGE
 $searchString = $_SERVER["QUERY_STRING"];
 //$query = "http://ft-prod01.uio.no:8080/khm/amundsen/select/?". $searchString;
 //http://itfds-prod02.uio.no:8080/khm/amundsen/select?
